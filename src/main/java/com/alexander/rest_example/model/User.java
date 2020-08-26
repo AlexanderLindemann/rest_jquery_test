@@ -1,13 +1,17 @@
 package com.alexander.rest_example.model;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class User {
     private Long id;
-    private String login;
-    private String email;
     private String password;
-    private String name;
-    private String lastname;
-    private int age;
+    private String username;
+    private String lastName;
+    private int weight;
+    private int height;
+
+    private Set<Role> roles = new HashSet<>();
 
 //    public User(Long id, String login, String email, String password, String name, String lastname, int age) {
 //        this.id = id;
@@ -30,22 +34,6 @@ public class User {
         this.id = id;
     }
 
-    public String getLogin() {
-        return login;
-    }
-
-    public void setLogin(String login) {
-        this.login = login;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
     public String getPassword() {
         return password;
     }
@@ -54,27 +42,43 @@ public class User {
         this.password = password;
     }
 
-    public String getName() {
-        return name;
+    public String getUsername() {
+        return username;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
-    public String getLastname() {
-        return lastname;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
-    public int getAge() {
-        return age;
+    public int getWeight() {
+        return weight;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    public Set<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(Set<Role> roles) {
+        this.roles = roles;
     }
 }

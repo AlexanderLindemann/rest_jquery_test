@@ -6,12 +6,10 @@ fetch('http://localhost:8080/admin')
                 data.forEach((x) => {
                     temp += "<tr>";
                     temp += "<td>" + x.id + "</td>";
-                    temp += "<td>" + x.login + "</td>"
-                    temp += "<td>" + x.email + "</td>"
-                    temp += "<td>" + x.password + "</td>"
-                    temp += "<td>" + x.name + "</td>"
-                    temp += "<td>" + x.lastname + "</td>"
-                    temp += "<td>" + x.age + "</td>"
+                    temp += "<td>" + x.username + "</td>"
+                    temp += "<td>" + x.lastName + "</td>"
+                    temp += "<td>" + x.weight + "</td>"
+                    temp += "<td>" + x.height + "</td>"
 
 
                 })
